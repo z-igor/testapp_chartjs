@@ -33,11 +33,11 @@ const router = new VueRouter({
   routes
 });
 
-router.beforeEach((to, next) => {
+router.beforeEach((to, from, next) => {
   const currentKey = ls("leadhit-site-id", "get");
 
   if (to.matched.some(r => r.meta.requiresKey) && currentKey === null) {
-    console.error("Redirect to \"/\", Invalid leadhit-site-id key.");
+    console.error('Redirect to "/", Invalid leadhit-site-id key.');
     next("/");
   } else {
     next();
