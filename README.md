@@ -1,7 +1,12 @@
 # для e.Ком
 
-## Project run
-### Compiles and hot-reloads for development
+## Install
+```
+npm install
+yarn install
+```
+
+## Project run. Compiles and hot-reloads for development
 ```
 npm run serve
 yarn serve
