@@ -28,12 +28,12 @@ const routes = [{
 ];
 
 const router = new VueRouter({
-  mode: "history",
+  mode: "hash",
   base: process.env.BASE_URL,
   routes
 });
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, next) => {
   const currentKey = ls("leadhit-site-id", "get");
 
   if (to.matched.some(r => r.meta.requiresKey) && currentKey === null) {

@@ -1,12 +1,9 @@
-# ekom
+# для e.Ком
 
-## Project setup
-```
-yarn install
-```
-
+## Project run
 ### Compiles and hot-reloads for development
 ```
+npm run serve
 yarn serve
 ```
 
@@ -20,5 +17,7 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Deploy
+```
+yarn deploy
+```
